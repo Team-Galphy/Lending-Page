@@ -14,7 +14,7 @@ export default function Header(){
     );
 }
 
-const Container = styled.div`
+const Container = styled.header`
     width: 100vw;
 	height: 71px;
 	background-color: white;
