@@ -17,18 +17,18 @@ const Container = styled.main`
     display: flex;
     flex-direction: column;
     .main-title {
-        margin-top: 180px;
-        font-family: Pretendard;
-        font-size: 72px;
+        margin-top: 155px;
+        font-family: 'Pretendard';
+        font-size: 65px;
         font-weight: 800;
         text-align: center;
         color: #a89684;
     }
 
     .main-title .text-style-1 {
-        padding-left: 18px;
+        padding-left: 14px;
         font-weight: 900;
-        color: #856346;
+        color: #9D7C60;
     }
 
     button{
@@ -36,18 +36,18 @@ const Container = styled.main`
         justify-content: center;
         align-items: center;
 
-        width: 261px;
-        height: 71px;
+        width: 230px;
+        height: 66px;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 90px;
         border: 0px;
-        background: #9D7C65;
-        border-radius: 35.5px;
+        background: #9D7C60;
+        border-radius: 30px;
 
         font-family: 'Pretendard';
         font-style: normal;
         font-weight: 700;
-        font-size: 35px;
+        font-size: 30px;
         line-height: 42px;
         /* identical to box height */
 

@@ -16,7 +16,7 @@ export default function Header(){
 
 const Container = styled.header`
     width: 100vw;
-	height: 64px;
+	height: 60px;
 	background-color: white;
     flex-grow: 0;
     display: flex;
@@ -28,8 +28,8 @@ const Container = styled.header`
 
         img{
             margin: 0 0 0 160px;
-            width: 39px;
-            height: 39px;
+            width: 35px;
+            height: 35px;
             object-fit: cover;
         }
         
@@ -38,7 +38,7 @@ const Container = styled.header`
             width: fit-content;
             height: fit-content;
             font-family: Pretendard;
-            font-size: 30px;
+            font-size: 27px;
             font-weight: 800;
             color: #866447;
         }
