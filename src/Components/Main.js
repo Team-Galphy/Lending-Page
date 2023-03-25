@@ -17,9 +17,9 @@ const Container = styled.main`
     display: flex;
     flex-direction: column;
     .main-title {
-        margin-top: 192px;
+        margin-top: 180px;
         font-family: Pretendard;
-        font-size: 80px;
+        font-size: 72px;
         font-weight: 800;
         text-align: center;
         color: #a89684;
@@ -36,8 +36,8 @@ const Container = styled.main`
         justify-content: center;
         align-items: center;
 
-        width: 290px;
-        height: 79px;
+        width: 261px;
+        height: 71px;
         margin: 0 auto;
         margin-top: 80px;
         border: 0px;

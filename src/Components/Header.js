@@ -16,7 +16,7 @@ export default function Header(){
 
 const Container = styled.header`
     width: 100vw;
-	height: 71px;
+	height: 64px;
 	background-color: white;
     flex-grow: 0;
     display: flex;
