@@ -11,4 +11,5 @@ export default function Card(){
 const Container = styled.main`
     width: 100vw;
     height: 440px;
+    background-color: red;
 `;
