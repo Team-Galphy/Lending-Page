@@ -6,7 +6,9 @@ const GlobalStyle = createGlobalStyle`
     body{
         padding: 0;
         margin: 0;
+        width: 100%;
         background-color: #e7e2dc;
+        overflow-x: hidden;
         font-family: 'Noto Sans KR', sans-serif;
     };
     button{
@@ -19,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         outline: none;
         padding-left: 10px;
+    }
+    #root{
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 `;
 
