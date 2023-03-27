@@ -9,7 +9,7 @@ export const Container1 = styled.div`
         flex-direction: row;
         
         > div{
-            margin-right: 220px;
+            margin-right: 250px;
             
             > div{
                 margin-top: 35px;
@@ -26,7 +26,7 @@ export const Container1 = styled.div`
     }
     img{
         margin: 80px 0 0 0;
-        width: 210px;
+        width: 265px;
         height: auto;
     }
     h2{
@@ -57,7 +57,7 @@ export const Container2 = styled.div`
         flex-direction: row;
         
         > div{
-            margin-left: 220px;
+            margin-left: 250px;
             
             > div{
                 margin-top: 35px;
@@ -74,7 +74,7 @@ export const Container2 = styled.div`
     }
     img{
         margin: 80px 0 0 0;
-        width: 210px;
+        width: 265px;
         height: auto;
     }
     h2{
