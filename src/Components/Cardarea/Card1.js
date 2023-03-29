@@ -4,12 +4,18 @@ import Review from "../Common/Review";
 export default function Card1(){
     return(
         <Container>
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
-            <Review />
+            <div>
+                <Review />
+                <Review />
+                <Review />
+                <Review />
+                <Review />
+                <Review />
+                <Review />
+                <Review />
+                <Review />
+                <Review />
+            </div>
         </Container>
     );
 }
@@ -17,8 +23,22 @@ export default function Card1(){
 const Container = styled.main`
     display: flex;
     flex-direction: row;
-
     width: 100vw;
     height: 50%;
-    background-color: white;
+    
+    > div{
+        display: flex;
+        flex-direction: row;
+        animation: marquee1 10s linear infinite;
+    }
+
+    @keyframes marquee1 {
+        from {
+            transform: translateX(-50%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
 `;

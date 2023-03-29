@@ -1,13 +1,59 @@
 import styled from "styled-components";
-import Card1 from "./Cardarea/Card1";
-import Card2 from "./Cardarea/Card2";
+import Review from "./Common/Review";
 
 
 export default function Card(){
     return(
         <Container>
-            <Card1 />
-            <Card2 />
+            <div>
+                <div className="top-cardarea">
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                </div>
+                <div className="bottom-cardarea">
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                    <Review />
+                </div>
+            </div>
         </Container>
     );
 }
@@ -15,5 +61,35 @@ export default function Card(){
 const Container = styled.main`
     margin-top: 40px;
     width: 100vw;
-    height: 360px;
+    height: 380px;
+
+    > div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        animation: marquee1 20s linear infinite;
+
+        > div{
+            margin-top: 20px;
+            width: 100vw;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .bottom-cardarea{
+            transform: translateX(-185px);
+        }
+    }
+
+    @keyframes marquee1 {
+        from {
+            transform: translateX(-50%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
 `;
