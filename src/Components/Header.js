@@ -25,10 +25,15 @@ const Container = styled.header`
         height: 35px;
         object-fit: cover;
     }
+    @media (max-width: 1200px){
+        img{
+            margin-left: 4rem;
+        }
+    }
     
     @media (max-width: 900px){
         img{
-            margin-left: 6rem;
+            margin-left: 3rem;
         }
     }
 

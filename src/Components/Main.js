@@ -4,7 +4,7 @@ export default function Main(){
     return(
         <Container>
             <h1 class="main-title">
-                우리가 원하던
+                우리가 원하던<br />
                 <span class="text-style-1">독서 플랫폼</span>
             </h1>
             <button>사전예약하기</button>
@@ -22,12 +22,32 @@ const Container = styled.main`
         font-weight: 800;
         text-align: center;
         color: #a89684;
+
+        @media (max-width: 800px){
+            font-size: 75px;
+        }
+
+        @media (max-width: 380px){
+            font-size: 60px;
+        }
+
+        > br{
+            display: none;
+            @media (max-width: 800px){
+                display: block;
+            }
+        }
     }
 
     .main-title .text-style-1 {
         padding-left: 14px;
         font-weight: 900;
         color: #9D7C60;
+
+        @media (max-width: 800px){
+            margin-top: 5px;
+            padding-left: 0px;
+        }
     }
 
     button{
