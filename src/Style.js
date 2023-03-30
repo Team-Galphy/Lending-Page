@@ -4,6 +4,7 @@ export const Container1 = styled.div`
     width: 100vw;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
     > div{
         display: flex;
         flex-direction: row;
@@ -27,6 +28,7 @@ export const Container1 = styled.div`
     img{
         margin: 80px 0 0 0;
         width: 265px;
+        min-width: 150px;
         height: auto;
     }
     h2{
@@ -52,6 +54,7 @@ export const Container2 = styled.div`
     width: 100vw;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
     > div{
         display: flex;
         flex-direction: row;
@@ -75,6 +78,7 @@ export const Container2 = styled.div`
     img{
         margin: 80px 0 0 0;
         width: 265px;
+        min-width: 150px;
         height: auto;
     }
     h2{

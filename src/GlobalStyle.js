@@ -3,6 +3,8 @@ import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
     ${reset};
+    overflow-x: hidden;
+
     body{
         padding: 0;
         margin: 0;

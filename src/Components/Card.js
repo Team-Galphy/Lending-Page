@@ -60,8 +60,9 @@ export default function Card(){
 
 const Container = styled.main`
     margin-top: 40px;
-    width: 100vw;
+    width: 100%;
     height: 380px;
+    overflow-x: hidden;
 
     > div{
         display: flex;

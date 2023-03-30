@@ -26,6 +26,8 @@ const Container = styled.footer`
     display: flex;
     flex-direction: row;
 
+    overflow-x: hidden;
+
     width: 100vw;
     height: 130px;
     background-color: #DCDCDC;
