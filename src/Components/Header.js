@@ -20,9 +20,21 @@ const Container = styled.header`
     align-items: center;
 
     img{
-        margin: 0 0 0 160px;
+        margin-left: 12rem;
         width: fit-content;
         height: 35px;
         object-fit: cover;
+    }
+    
+    @media (max-width: 900px){
+        img{
+            margin-left: 6rem;
+        }
+    }
+
+    @media (max-width: 600px){
+        img{
+            margin-left: 2rem;
+        }
     }
 `;
