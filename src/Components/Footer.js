@@ -15,7 +15,7 @@ export default function Footer(){
                         <a>개인정보처리방침</a>
                         <a>이용약관</a>
                     </div>
-                    <div className="e-mail">000000000@galphy.com</div>
+                    <div className="e-mail">team@galphy.app</div>
                 </S2>
             </div>
         </Container>
@@ -39,7 +39,9 @@ const Container = styled.footer`
         display: flex;
         flex-direction: row;
         padding: 0px 200px 0px 200px;
-        
+        @media (max-width: 940px){
+            padding: 0px 100px 0px 100px;
+        }
         > div{
             width: 100%;
         }
@@ -64,6 +66,7 @@ const S1 = styled.div`
             font-size: 15px;
             line-height: 18px;
 
+            width: fit-content;
             color: #737373;
     }
 `;

@@ -13,10 +13,12 @@ export const Container1 = styled.div`
 
     @media (max-width: 1000px) {
       flex-direction: column;
+      margin-left: 30px;
     }
 
     > div {
-      //margin-right: 250px;
+      margin-right: 250px;
+      width: 378.65px;
       @media (max-width: 1000px) {
         margin-right: 0px;
       }
@@ -69,7 +71,7 @@ export const Container1 = styled.div`
     font-size: 70px;
     line-height: 84px;
 
-    color: #b2b5b8;
+    color: #1C1C1C;
 
     @media (max-width: 580px) {
       font-size: 50px;
@@ -90,10 +92,12 @@ export const Container2 = styled.div`
 
     @media (max-width: 1000px) {
       flex-direction: column-reverse;
+      margin-left: 50px;
     }
 
     > div {
-      //margin-left: 250px;
+      margin-left: 250px;
+      width: 378.65px;
 
       @media (max-width: 1000px) {
         margin-left: 0px;
@@ -135,7 +139,7 @@ export const Container2 = styled.div`
     line-height: 48px;
     color: #8c6141;
     margin: 80px 0 30px 1px;
-
+    
     @media (max-width: 580px) {
       font-size: 30px;
       line-height: 34px;
@@ -148,7 +152,7 @@ export const Container2 = styled.div`
     font-size: 70px;
     line-height: 84px;
 
-    color: #b2b5b8;
+    color: #1C1C1C;
 
     @media (max-width: 580px) {
       font-size: 50px;

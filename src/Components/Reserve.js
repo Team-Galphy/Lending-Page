@@ -1,33 +1,66 @@
 import styled from "styled-components";
+import PopUp from "./popup";
+import { useState } from "react";
 
 export default function Rserve(){
+    const [showPopUp, setShowPopUp] = useState(false);
     return(
         <Container>
-            <strong class="main-title">
-                가나다라 
-                <span class="text-style-1">마바사아자차</span>
-            </strong>
-            <button>사전예약하기</button>
+            <div>
+                <strong class="text1">책, 보는 것에서  <strong id="gap">&nbsp;</strong></strong>
+                <strong class="text2">읽는 것으로</strong>
+            </div>
+            <button onClick={()=>{setShowPopUp(true)}}>사전예약하기</button>
+            {
+                showPopUp ? <PopUp setShowPopUp={setShowPopUp} /> : null
+            }
         </Container>
     );
 }
 
 const Container = styled.main`
-    display: flex;
+    display: flex;;
     flex-direction: column;
-    .main-title {
-        margin-top: 155px;
-        font-family: 'Pretendard';
+    
+    strong {
+        font-family: "Pretendard";
         font-size: 65px;
         font-weight: 800;
         text-align: center;
         color: #a89684;
+
+        @media (max-width: 800px) {
+            #gap {
+                display: none;
+            }
+            
+            font-size: 72px;
+        }
+
+        @media (max-width: 700px) {
+            font-size: 66px;
+        }
+
+        @media (max-width: 400px) {
+        font-size: 60px;
+        }
     }
 
-    .main-title .text-style-1 {
-        padding-left: 14px;
-        font-weight: 900;
-        color: #9D7C60;
+    div {
+        display: flex;
+        margin: 155px auto 0 auto;
+
+        @media (max-width: 800px) {
+            flex-direction: column;
+
+            .text2{
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .text2{
+        color: #856346;
     }
 
     button{

@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
         width: 100%;
         background-color: #e7e2dc;
         overflow-x: hidden;
-        font-family: 'Noto Sans KR', sans-serif;
     };
     #root{
         margin: 0;
