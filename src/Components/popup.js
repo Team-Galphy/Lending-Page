@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo2 from '../Assets/Img/popup_logo.png'
+import Logo2 from '../assets/logo/popup_logo.png'
 import { useEffect, useState } from "react";
 
 const PopUp = ({ setShowPopUp }) => {

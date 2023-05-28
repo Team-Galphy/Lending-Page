@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import footer_logo from "../Assets/Img/footer_logo.png";
+import footer_logo from "../assets/logo/footer_logo.png";
 
 export default function Footer(){
     return(

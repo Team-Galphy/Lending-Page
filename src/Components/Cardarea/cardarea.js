@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Review from "./Review";
+import Review from "./review";
 
 
 export default function Card(){

@@ -1,5 +1,5 @@
 import * as S from "../../style/style";
-import home from "../Assets/Img/home.png";
+import home from "../../assets/service/profile.png";
 
 export default function Profile(){
     return(

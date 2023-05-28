@@ -1,5 +1,5 @@
-import * as S from "../Style";
-import home from "../Assets/Img/home.png";
+import * as S from "../../style/style";
+import home from "../../assets/service/library.png";
 
 export default function Library(){
     return(

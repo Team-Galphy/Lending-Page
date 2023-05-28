@@ -1,12 +1,12 @@
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
-import Card from "./Components/Card";
-import Home from "./Components/Home";
-import Checklist from "./Components/Checklist";
-import Library from "./Components/Library";
-import Profile from "./Components/Profile";
-import Rserve from "./Components/Reserve";
+import Header from "./components/header";
+import Main from "./components/main";
+import Footer from "./components/footer";
+import Card from "./components/cardarea/cardarea";
+import Home from "./page/service/home";
+import Checklist from "./page/service/checklist";
+import Library from "./page/service/library";
+import Profile from "./page/service/profile";
+import Rserve from "./components/reserve";
 
 function App() {
   return (
