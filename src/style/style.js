@@ -16,7 +16,7 @@ export const Container1 = styled.div`
     }
 
     > div {
-      margin-right: 250px;
+      //margin-right: 250px;
       @media (max-width: 1000px) {
         margin-right: 0px;
       }
@@ -93,7 +93,7 @@ export const Container2 = styled.div`
     }
 
     > div {
-      margin-left: 250px;
+      //margin-left: 250px;
 
       @media (max-width: 1000px) {
         margin-left: 0px;

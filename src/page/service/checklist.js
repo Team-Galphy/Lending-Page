@@ -1,4 +1,4 @@
-import * as S from "../Style";
+import * as S from "../../style/style";
 import home from "../Assets/Img/home.png";
 
 export default function Checklist(){

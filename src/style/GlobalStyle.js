@@ -13,17 +13,6 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         font-family: 'Noto Sans KR', sans-serif;
     };
-    button{
-        display: flex;
-        cursor: pointer;
-        outline: none;
-        border-radius: 3px;
-    };
-    input{
-        display: flex;
-        outline: none;
-        padding-left: 10px;
-    }
     #root{
         margin: 0;
         padding: 0;

@@ -1,14 +1,22 @@
 import styled from "styled-components";
+import { useState } from "react";
+import PopUp from "./popup";
 
 export default function Main() {
+
+  const [showPopUp, setShowPopUp] = useState(false);
+
   return (
     <Container>
-      <h1 class="main-title">
-        우리가 원하던
-        <br />
-        <span class="text-style-1">독서 플랫폼</span>
-      </h1>
-      <button>사전예약하기</button>
+        <h1 class="main-title">
+          우리가 원하던
+          <br />
+          <span class="text-style-1">독서 플랫폼</span>
+        </h1>
+        <button onClick={() => setShowPopUp(true)}>사전예약하기</button>
+        {
+                  showPopUp ? <PopUp setShowPopUp={setShowPopUp} /> : null
+        }
     </Container>
   );
 }

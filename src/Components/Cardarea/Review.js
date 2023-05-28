@@ -26,8 +26,8 @@ const Sh = styled.h4`
     position: absolute;
     width: fit-content;
     height: 30px;
-    left: 24px;
-    top: 30px;
+    left: 26px;
+    top: 32px;
 
     font-family: 'Pretendard';
     font-style: normal;
@@ -44,7 +44,7 @@ const SP = styled.p`
     position: absolute;
     width: fit-content;
     height: 48px;
-    left: 24px;
+    left: 26px;
     top: 70px;
 
     font-family: 'Pretendard';
