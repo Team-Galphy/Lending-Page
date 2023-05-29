@@ -41,4 +41,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDezIgD7e2J0kSL89jTsFKCucsa2JLlNT4",
+      authDomain: "lending-page-32586.firebaseapp.com",
+      projectId: "lending-page-32586",
+      storageBucket: "lending-page-32586.appspot.com",
+      messagingSenderId: "972244017401",
+      appId: "1:972244017401:web:63e669661495dc4a620228",
+      measurementId: "G-9P93BE8HT4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>

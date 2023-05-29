@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Logo2 from '../assets/popup/popup_logo.png'
 import Cancel from '../assets/popup/cancel.png';
+import { db } from '../firebase';
+import { collection, addDoc } from "firebase/firestore"; 
 import { useEffect, useState, useRef } from "react";
 
 const PopUp = ({ setShowPopUp }) => {
@@ -18,7 +20,10 @@ const PopUp = ({ setShowPopUp }) => {
                 <Logo src={Logo2} alt="logo"/>
                 <Text>사전예약을 하면 출시 알림을 드릴게요!</Text>
                 <Input placeholder="메일 입력하기" onChange={e => setText(e.target.value)} value={text}/>
-                <PopUpButton><p>사전예약하기</p></PopUpButton>
+                <PopUpButton onClick={async ()=>{
+                    const boardRef = collection(db, "board");
+                    await addDoc(boardRef, { email: text });
+                }}><p>사전예약하기</p></PopUpButton>
             </Board>s
         </Sback>
      );
