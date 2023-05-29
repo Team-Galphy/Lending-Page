@@ -37,9 +37,6 @@ const Sback = styled.div`
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
-
-    display: flex;
-    align-items: center;
 `;
 
 const Board = styled.div`

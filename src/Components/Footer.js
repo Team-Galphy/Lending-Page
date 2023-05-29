@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import footer_logo from "../assets/logo/footer_logo.png";
 
+
 export default function Footer(){
     return(
         <Container>
@@ -11,8 +12,8 @@ export default function Footer(){
                 </S1>
                 <S2>
                     <div>
-                        <a>개인정보처리방침</a>
-                        <a id="rule">이용약관</a>
+                        <a href="/private.html">개인정보처리방침</a>
+                        <a id="rule" href="/rule.html">이용약관</a>
                     </div>
                     <div className="e-mail">teamgalphy@gmail.com</div>
                 </S2>
@@ -31,6 +32,11 @@ const Container = styled.footer`
     height: 130px;
     background-color: #DCDCDC;
     bottom: 0;
+
+    a {
+        text-decoration: none;
+        color: #737373;
+    }
 
     @media (max-width: 405px){
         > div {
@@ -97,7 +103,7 @@ const S2 = styled.div`
             font-family: 'Pretendard';
             font-weight: 500;
             font-size: 15px;
-            color: #737373;
+            color: #737373 !important;
 
             text-align: end;
 
