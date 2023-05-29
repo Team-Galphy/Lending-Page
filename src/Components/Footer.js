@@ -9,13 +9,12 @@ export default function Footer(){
                     <img src={footer_logo} alt="푸터 로고"/>
                     <small>Copyright 2023. Galphy all rights reserved.</small>    
                 </S1>
-                <div></div>
                 <S2>
                     <div>
                         <a>개인정보처리방침</a>
-                        <a>이용약관</a>
+                        <a id="rule">이용약관</a>
                     </div>
-                    <div className="e-mail">team@galphy.app</div>
+                    <div className="e-mail">teamgalphy@gmail.com</div>
                 </S2>
             </div>
         </Container>
@@ -33,6 +32,14 @@ const Container = styled.footer`
     background-color: #DCDCDC;
     bottom: 0;
 
+    @media (max-width: 405px){
+        > div {
+            display: flex;
+            flex-direction: column !important;
+        }   
+        height : 260px;
+    }
+
     > div{
         width: 100%;
         height: 100%;
@@ -42,6 +49,16 @@ const Container = styled.footer`
         @media (max-width: 940px){
             padding: 0px 100px 0px 100px;
         }
+        @media (max-width: 740px){
+            margin: 0px 30px 0px 30px;
+            padding: 0px 0px 0px 0px;
+        }
+
+        @media (max-width: 590px){
+            margin: 0px 30px 0px 30px;
+            padding: 0px 0px 0px 0px;
+        }
+
         > div{
             width: 100%;
         }
@@ -72,10 +89,9 @@ const S1 = styled.div`
 `;
 
 const S2 = styled.div`
-        margin-top: 46px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
-
 
         div{
             font-family: 'Pretendard';
@@ -88,10 +104,26 @@ const S2 = styled.div`
             > a{
                 margin-left: 10px;
             }
+
+            @media (max-width: 590px){
+                display: flex;
+                flex-direction: column;
+                > a{
+                    margin-left: 0px;
+                }
+
+                #rule {
+                    margin-top: 10px;
+                }
+            }
         }
 
 
         .e-mail{
            margin-top: 25px;
+
+           @media (max-width: 590px){
+                margin-top: 15px;
+            }
         }
 `;
