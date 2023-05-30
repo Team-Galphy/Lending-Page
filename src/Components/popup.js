@@ -22,7 +22,9 @@ const PopUp = ({ setShowPopUp }) => {
                 <Input placeholder="메일 입력하기" onChange={e => setText(e.target.value)} value={text}/>
                 <PopUpButton onClick={async ()=>{
                     const boardRef = collection(db, "board");
+                    setShowPopUp(false);
                     await addDoc(boardRef, { email: text });
+                    alert('사전예약이 완료되었습니다!');
                 }}><p>사전예약하기</p></PopUpButton>
             </Board>s
         </Sback>
