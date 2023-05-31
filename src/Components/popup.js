@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import Logo2 from '../assets/popup/popup_logo.png'
-import Cancel from '../assets/popup/cancel.png';
 import { db } from '../firebase';
 import { collection, addDoc } from "firebase/firestore"; 
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 
 const PopUp = ({ setShowPopUp }) => {
     const [text, setText] = useState('');
@@ -61,12 +60,6 @@ const Board = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`;
-
-const Scancel = styled.img`
-    width: 25px;
-    height: 25px;
-    left: 100%;
 `;
 
 const Logo = styled.img`

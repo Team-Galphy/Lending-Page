@@ -1,7 +1,6 @@
 //firebase.js
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import firebase from "firebase/compat/app"
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
