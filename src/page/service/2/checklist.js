@@ -10,7 +10,7 @@ export default function Checklist(){
                     <h2>
                         체크리스트 글쓰기
                     </h2>
-                    <h3>누구가 쉽게</h3>
+                    <h3>누구나 쉽게</h3>
                     <h3>멋진 글 완성</h3>
                     <div>막막한 글쓰기는 이제 그만,<br/>질문을 고르고 답하면 글이 완성돼요.</div>
                 </div>
