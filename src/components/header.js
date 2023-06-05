@@ -21,7 +21,7 @@ const Container = styled.header`
 
     img{
         margin-left: 12rem;
-        width: fit-content;
+        width: 132.02;
         height: 35px;
         object-fit: cover;
     }
