@@ -5,8 +5,10 @@ import { collection, addDoc } from "firebase/firestore";
 import { useState, useRef } from "react";
 
 const PopUp = ({ setShowPopUp }) => {
+    const emailRegEx = /^[A-Za-z0-9]([-_.]?[A-Za-z0-9])*@[A-Za-z0-9]([-_.]?[A-Za-z0-9])*\.[A-Za-z]{2,3}$/;
     const [text, setText] = useState('');
     const PopUpBg = useRef(null);
+    
     return ( 
         <Sback
             ref={PopUpBg}
@@ -18,12 +20,16 @@ const PopUp = ({ setShowPopUp }) => {
             <Board>
                 <Logo src={Logo2} alt="logo"/>
                 <Text>사전예약을 하면 출시 알림을 드릴게요!</Text>
-                <Input placeholder="메일 입력하기" onChange={e => setText(e.target.value)} value={text}/>
+                <Input placeholder="메일 입력하기" onChange={(e) => {setText(e.target.value)}} value={text}/>
                 <PopUpButton onClick={async ()=>{
-                    const boardRef = collection(db, "board");
-                    setShowPopUp(false);
-                    await addDoc(boardRef, { email: text });
-                    alert('사전예약이 완료되었습니다!');
+                    if(emailRegEx.test(text)){
+                        const boardRef = collection(db, "board");
+                        setShowPopUp(false);
+                        await addDoc(boardRef, { email: text });
+                        alert('사전예약이 완료되었습니다!');
+                    }else{
+                        alert('이메일을 입력하세요!');
+                    }
                 }}><p>사전예약하기</p></PopUpButton>
             </Board>s
         </Sback>
@@ -89,8 +95,8 @@ const Text = styled.p`
 const Input = styled.input`
     margin: 25px 0 0 0;
 
-    width: 280px;
-    height: 50px;
+    width: 280px !important;
+    height: 50px !important;
 
     font-family: 'Pretendard';
     font-style: normal;
