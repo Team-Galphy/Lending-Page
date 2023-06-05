@@ -51,7 +51,7 @@ const Board = styled.div`
 
     @media (max-width: 800px) {
         width: 80vw;
-        min-width: 340px;
+        min-width: 370px;
     }
 
     background: #ffffff !important;

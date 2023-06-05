@@ -68,7 +68,7 @@ const Container = styled.main`
         flex-direction: column;
         width: 100%;
         height: 100%;
-        animation: marquee1 40s linear infinite;
+        animation: marquee1 55s linear infinite;
         @media (max-width: 450px) {
             animation: marquee1 25s linear infinite;
         }
