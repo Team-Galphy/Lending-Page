@@ -57,7 +57,7 @@ const Board = styled.div`
 
     @media (max-width: 800px) {
         width: 80vw;
-        min-width: 370px;
+        min-width: 280px;
     }
 
     background: #ffffff !important;
@@ -95,9 +95,11 @@ const Text = styled.p`
 const Input = styled.input`
     margin: 25px 0 0 0;
 
-    width: 280px !important;
+    width: 280px;
     height: 50px !important;
-
+    @media (max-width: 500px) {
+        width: 220px;
+    }
     font-family: 'Pretendard';
     font-style: normal;
     font-weight: 500;
@@ -143,6 +145,9 @@ const PopUpButton = styled.button`
         /* identical to box height */
 
         color: #FFFFFF !important;
+    }
+    @media (max-width: 500px) {
+        width: 260px !important;
     }
 `;
 
