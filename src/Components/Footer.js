@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import footer_logo from "../assets/logo/footer_logo.png";
+import { Link } from "react-router-dom";
 
 
 export default function Footer(){
@@ -116,6 +117,7 @@ const S2 = styled.div`
                 flex-direction: column;
                 > a{
                     margin-left: 0px;
+                    text-decoration: none;
                 }
 
                 #rule {
