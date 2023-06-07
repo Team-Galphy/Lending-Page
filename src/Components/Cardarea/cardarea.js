@@ -97,11 +97,11 @@ const Container = styled.main`
 
     @keyframes marquee1 {
         from {
-            transform: translateX(-400%);
+            transform: translateX(0);
         }
 
         to {
-            transform: translateX(0);
+            transform: translateX(-400%);
         }
     }
 `;
